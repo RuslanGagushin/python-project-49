@@ -1,4 +1,16 @@
 [[package]]
+name = "autopep8"
+version = "2.0.0"
+description = "A tool that automatically formats Python code to conform to the PEP 8 style guide"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pycodestyle = ">=2.9.1"
+tomli = "*"
+
+[[package]]
 name = "flake8"
 version = "5.0.4"
 description = "the modular source code checker: pep8 pyflakes and co"
@@ -43,12 +55,24 @@ category = "dev"
 optional = false
 python-versions = ">=3.6"
 
+[[package]]
+name = "tomli"
+version = "2.0.1"
+description = "A lil' TOML parser"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "257f2e50e83853c802479d3cde596354d0052a286ef7ff76411dbb9c3c50874d"
+content-hash = "3a9f6a00d752a0824ea9f0ceb694eb6bb7784a61a424f8ff6977b45608549d7e"
 
 [metadata.files]
+autopep8 = [
+    {file = "autopep8-2.0.0-py2.py3-none-any.whl", hash = "sha256:ad924b42c2e27a1ac58e432166cc4588f5b80747de02d0d35b1ecbd3e7d57207"},
+    {file = "autopep8-2.0.0.tar.gz", hash = "sha256:8b1659c7f003e693199f52caffdc06585bb0716900bbc6a7442fd931d658c077"},
+]
 flake8 = [
     {file = "flake8-5.0.4-py2.py3-none-any.whl", hash = "sha256:7a1cf6b73744f5806ab95e526f6f0d8c01c66d7bbe349562d22dfca20610b248"},
     {file = "flake8-5.0.4.tar.gz", hash = "sha256:6fbe320aad8d6b95cec8b8e47bc933004678dc63095be98528b7bdd2a9f510db"},
@@ -68,4 +92,8 @@ pycodestyle = [
 pyflakes = [
     {file = "pyflakes-2.5.0-py2.py3-none-any.whl", hash = "sha256:4579f67d887f804e67edb544428f264b7b24f435b263c4614f384135cea553d2"},
     {file = "pyflakes-2.5.0.tar.gz", hash = "sha256:491feb020dca48ccc562a8c0cbe8df07ee13078df59813b83959cbdada312ea3"},
+]
+tomli = [
+    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
+    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
