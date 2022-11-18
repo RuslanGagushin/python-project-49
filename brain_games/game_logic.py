@@ -14,7 +14,7 @@ def run(game):
             print('Correct!')
         else:
             print(
-                "'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, a))
+                f"'{answer}' is wrong answer ;(. Correct answer was '{a}'")
             print("Let's try again, {}!".format(name))
             break
     else:
