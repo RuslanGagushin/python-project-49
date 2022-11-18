@@ -3,7 +3,7 @@ from brain_games import game_logic, games
 
 
 def main():
-    game_logic.run(games.prog)
+    game_logic.run(games.progression)
 
 
 if __name__ == '__main__':
