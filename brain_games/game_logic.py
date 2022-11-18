@@ -6,7 +6,6 @@ def run(game):
     name = cli.get_name()
     cli.greet(name)
     print(game.DESCRIPTION)
-    print()
     for _ in range(3):
         q, a = game.generate_qa_pair()
         print('Question: {}'.format(q))
